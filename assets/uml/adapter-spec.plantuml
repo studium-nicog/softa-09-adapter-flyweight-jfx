@@ -2,7 +2,7 @@
 
 left to right direction
 
-package de.thro.inf.prg3.a09.resource {
+package ohm.softa.a09.resource {
 
 	class FxImageLoaderAdapter {
 		- resourceLoader: ResourceLoader<Image>
