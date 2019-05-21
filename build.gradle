@@ -1,19 +1,8 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.5'
-//	id "com.google.osdetector" version "1.4.0"
+    id 'org.openjfx.javafxplugin' version '0.0.7'
 }
-
-/*
-Required only if JavaFX graphics extension is required
-def platformMap = [
-        osx    : 'mac',
-        windows: 'win',
-        linux  : 'linux'
-]
-
-ext.platform = platformMap[osdetector.os] */
 
 sourceCompatibility = JavaVersion.VERSION_11
 
@@ -27,8 +16,6 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:$commons_lang3_version")
     implementation("org.apache.logging.log4j:log4j-api:${log4j2Version}")
     implementation("org.apache.logging.log4j:log4j-core:${log4j2Version}")
-    
-    //implementation "org.openjfx:javafx-graphics:11.0.1:$platform"
 
     testCompile("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
@@ -36,7 +23,7 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'de.thro.inf.prg3.a09.App'
+mainClassName = 'ohm.softa.a09.App'
 
 
 test {
